@@ -1,0 +1,37 @@
+[
+    { "id": "math101", "label": "MATH 101\nCalculus I", "units": 4, "type": "core", "term": 1, "row": 2, "prereqs": [] },
+    { "id": "engr101", "label": "ENGR 101\nIntro to Eng", "units": 4, "type": "core", "term": 1, "row": 3, "prereqs": [] },
+    { "id": "ge1", "label": "GE 1\nWriting", "units": 4, "type": "ge", "term": 1, "row": 4, "prereqs": [] },
+    { "id": "ge-math", "label": "GE MATH\nReasoning", "units": 4, "type": "ge", "term": 1, "row": 5, "prereqs": [] },
+    { "id": "ge-hist", "label": "GE HIST\nUS History", "units": 4, "type": "ge", "term": 1, "row": 6, "prereqs": [] },
+  
+    { "id": "phys101", "label": "PHYS 101\nPhysics I", "units": 4, "type": "core", "term": 2, "row": 2, "prereqs": ["math101"] },
+    { "id": "cs101", "label": "CS 101\nIntro to CS", "units": 4, "type": "core", "term": 2, "row": 3, "prereqs": ["engr101"] },
+    { "id": "ge2", "label": "GE 2\nEthics", "units": 4, "type": "ge", "term": 2, "row": 4, "prereqs": [] },
+    { "id": "bio101", "label": "BIO 101\nBiology I", "units": 4, "type": "elective", "term": 2, "row": 5, "prereqs": [] },
+  
+    { "id": "engr102", "label": "ENGR 102\nDesign Lab", "units": 4, "type": "core", "term": 3, "row": 2, "prereqs": ["cs101"] },
+    { "id": "ge3", "label": "GE 3\nHumanities", "units": 4, "type": "ge", "term": 3, "row": 3, "prereqs": [] },
+    { "id": "math102", "label": "MATH 102\nCalculus II", "units": 4, "type": "core", "term": 3, "row": 5, "prereqs": ["math101"] },
+  
+    { "id": "stat201", "label": "STAT 201\nProbability", "units": 4, "type": "core", "term": 4, "row": 2, "prereqs": ["phys101"] },
+    { "id": "ge4", "label": "GE 4\nCommunication", "units": 4, "type": "ge", "term": 4, "row": 3, "prereqs": [] },
+    { "id": "stat202", "label": "STAT 202\nInferential Stats", "units": 4, "type": "core", "term": 4, "row": 5, "prereqs": ["math102"] },
+  
+    { "id": "math201", "label": "MATH 201\nLinear Algebra", "units": 4, "type": "core", "term": 5, "row": 2, "prereqs": ["stat201"] },
+    { "id": "cs201", "label": "CS 201\nData Structures", "units": 4, "type": "core", "term": 5, "row": 3, "prereqs": ["cs101"] },
+    { "id": "cs220", "label": "CS 220\nDatabases", "units": 4, "type": "elective", "term": 5, "row": 5, "prereqs": ["stat202"] },
+  
+    { "id": "cs202", "label": "CS 202\nAlgorithms", "units": 4, "type": "core", "term": 6, "row": 2, "prereqs": ["cs201", "math201"] },
+    { "id": "ge5", "label": "GE 5\nSociety", "units": 4, "type": "ge", "term": 6, "row": 3, "prereqs": [] },
+    { "id": "cs221", "label": "CS 221\nAI Concepts", "units": 4, "type": "capstone", "term": 6, "row": 5, "prereqs": ["cs220", "math230"] },
+  
+    { "id": "engr201", "label": "ENGR 201\nSystems Design", "units": 4, "type": "core", "term": 7, "row": 2, "prereqs": ["cs202"] },
+    { "id": "math202", "label": "MATH 202\nDifferential Eq.", "units": 4, "type": "core", "term": 7, "row": 3, "prereqs": ["math102"] },
+    { "id": "math230", "label": "MATH 230\nDiscrete Math", "units": 4, "type": "core", "term": 7, "row": 5, "prereqs": ["math101"] },
+  
+    { "id": "capstone", "label": "CAPSTONE\nProject", "units": 4, "type": "capstone", "term": 8, "row": 2, "prereqs": ["math202", "engr201", "cs221"] },
+    { "id": "ge6", "label": "GE 6\nGlobal Studies", "units": 4, "type": "ge", "term": 8, "row": 3, "prereqs": [] },
+    { "id": "ethics300", "label": "ETHICS 300\nEngineering Ethics", "units": 4, "type": "ge", "term": 8, "row": 5, "prereqs": [] }
+  ]
+  
